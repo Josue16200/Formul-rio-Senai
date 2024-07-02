@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanPage Star Wars - Formulário de Usuário</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="logo.png" style="
+    height: 80px;
+    position: fixed;
+    margin-left: 27%;
+    margin-top:38%;
+    ">
+    <h1>cadastro de perfil</h1>
+    <form>
+        <label>nome de usuário</label><br><input type="text"><br><br>
+        <label>senha</label><br><input type="password"><br>
+        <br>
+        <label>endereço</label><br><input type="text"><br><br>
+        <label id="cidade">cidade</label><br><input type="text"><br><br>
+
+        <input type="radio"  id="cheque" name="nacionalidade"><label> brasileiro</label>
+        <input type="radio"  id="cheque" name="nacionalidade"><label> estrangeiro</label>
+        <br><br><br>
+        <input type="checkbox" id="chequeDois"><label> Confirmo os dados do cadastro</label>
+        <br><br><br>
+        <button class="confirmar"><h3>Confirmar</h3></button>
+    </form>
+    <style>
+        @font-face {
+            font-family: 'star';
+            src: url(Starjedi.ttf);
+        }
+        body::-webkit-scrollbar {
+        width: 12px; /* width of the entire scrollbar */
+    }
+
+    body::-webkit-scrollbar-track {
+        background: white; /* color of the tracking area */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: rgb(05, 05, 05); /* color of the scroll thumb */
+        border-radius: 0px; /* roundness of the scroll thumb */
+        border: 3px solid none; /* creates padding around scroll thumb */
+    }
+        body{
+            background-image: url(background.jpeg);
+            color: white;
+            background-size: 100%;
+            font-family: 'star';
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            box-shadow: 0px 0px 10px black;
+        }
+        body::-webkit-scrollbar-thumb{
+            background-color: black;
+        }
+        form{
+            text-align: center;
+            margin-top: 100px;
+        }
+        img[src="pokeball.png"]{
+            height: 100px;
+            position: absolute;
+            margin-left: 50%;
+            margin-bottom: 10%;
+        }
+        #cidade{
+            margin-left: 0px;
+        }
+        #cheque{
+            height: 20px;
+            width: 20px;
+            
+            border-radius: 20%;
+        }
+        #chequeDois{
+            height: 20px;
+            width: 20px;
+        }
+        h1{
+            position: relative;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .confirmar{
+            position: relative;
+            display: inline-block;
+            height: 50px;           
+            background: url(darth.jpg);
+            background-size: 100%;
+            background-position-y: -35px;
+            background-position-x: 0px;
+            color: white;
+            text-shadow: 0px 0px 100px black;
+            margin-right: 150px;
+            border-style: none;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 20px;
+            border-style: solid;
+            border-color: yellow;
+            margin-left: 8%;
+            cursor: pointer;
+        }
+        input{
+            height: 20px;
+            width: 200px;
+        }
+        input[type="radio"], input[type="checkbox"]{
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>
